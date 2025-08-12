@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing AI - Choose Your Mode</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="shadow-overlay"></div>
+        <div class="crowd"></div>
+        <div class="crowd2 jump"></div>
+    </div>
+
+    <div class="page-title">
+        <h1>A Hybrid YOLO-LSTM Model for Real-Time Boxing Action Classification</h1>
+    </div>
+
+    <div class="ring-container">
+        <img src="{{ url_for('static', filename='images/ring-boxing1.png') }}" alt="Boxing Ring" class="boxing-ring-img">
+        
+        <div class="ui-overlay">
+            <div class="title-container">
+                <img src="{{ url_for('static', filename='images/glove.png') }}" alt="Boxing Glove Icon" class="glove-icon">
+                <h1>Boxing AI</h1>
+            </div>
+            
+            <h2>Choose Your Mode</h2>
+            
+            <div class="button-container">
+                <a href="{{ url_for('two_player') }}" class="mode-button">Two-Player Fight</a>
+                <a href="{{ url_for('shadow_boxing') }}" class="mode-button">Shadow Boxing</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/homepage.js') }}"></script>
+</body>
+</html>
