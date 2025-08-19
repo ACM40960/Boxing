@@ -1,10 +1,5 @@
 # A Hybrid YOLO-LSTM Model with Real-Time Boxing Action Classification
 
-🥊 Boxing is more than just punches - it’s rhythm, strategy, and split-second decisions. Yet, capturing and interpreting these dynamic movements in real time has always been a challenge.
-This project bridges that gap by combining the precision of YOLO-based pose estimation with the temporal awareness of LSTM models, creating a hybrid system that not only detects punches and blocks but understands the flow of combat as it happens.
-
-Whether for athlete training, fitness analysis, or interactive sparring systems, this project transforms raw motion into meaningful insights, making boxing actions interpretable, measurable, and ready for integration into modern sports technology.
-
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-CUDA%2012.5-orange)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Latest-informational)
@@ -15,6 +10,11 @@ Whether for athlete training, fitness analysis, or interactive sparring systems,
 ![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/ACM40960/Boxing?style=social)](https://github.com/ACM40960/Boxing/stargazers)
+
+🥊 Boxing is more than just punches - it’s rhythm, strategy, and split-second decisions. Yet, capturing and interpreting these dynamic movements in real time has always been a challenge.
+This project bridges that gap by combining the precision of YOLO-based pose estimation with the temporal awareness of LSTM models, creating a hybrid system that not only detects punches and blocks but understands the flow of combat as it happens.
+
+Whether for athlete training, fitness analysis, or interactive sparring systems, this project transforms raw motion into meaningful insights, making boxing actions interpretable, measurable, and ready for integration into modern sports technology.
 
 ## Index
 - [Abstract](#abstract)
@@ -36,6 +36,7 @@ Whether for athlete training, fitness analysis, or interactive sparring systems,
 - [Future Improvements](#future-improvements)
 - [Poster](#poster)
 - [License](#license)
+- [Authors](#authors)
 
 ## Abstract  
 
@@ -347,3 +348,6 @@ Here is the detailed project poster:
 This project is licensed under the **MIT License**.  
 Free to use and modify with attribution.
 
+## Authors  
+- **Jayaganeshan Thanga Kumar** [📧 jayaganeshan.thangakumar@ucdconnect.ie](mailto:jayaganeshan.thangakumar@ucdconnect.ie)  
+- **Kabilesh Sekar** [📧 kabilesh.sekar@ucdconnect.ie](mailto:kabilesh.sekar@ucdconnect.ie)  
