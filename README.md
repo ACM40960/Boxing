@@ -80,29 +80,36 @@ The system is designed for real-time use via a **Flask web application**.
 
 ```
 Boxing-main/
-
-        app/
-            app.py
-            block_classifier.pth
-            punch_classifier.pth
-            yolo11m-pose.pt
-            scripts/
-                shadow_boxing_analyzer.py
-                two_player_analyzer.py
-            static/
-                audio/
-                css/
-                images/
-                js/
-                video/
-            templates/
-        main/
-            block_classifier.pth
-            punch_classifier.pth
-            script.ipynb
-            yolo11m-pose.pt
-            labels/
-        gpu.py    
+│
+├── app/                          # Flask web application for real-time demo
+│   ├── app.py                    # Main Flask entry point (runs the web server)
+│   ├── block_classifier.pth      # Trained LSTM model for block detection
+│   ├── punch_classifier.pth      # Trained LSTM model for punch classification
+│   ├── yolo11m-pose.pt           # YOLOv11 pose estimation model
+│   │
+│   ├── scripts/                  # Supporting scripts for analysis modes
+│   │   ├── shadow_boxing_analyzer.py   # Handles single-player shadow boxing
+│   │   └── two_player_analyzer.py      # Handles two-player sparring analysis
+│   │
+│   ├── static/                   # Static files served by Flask
+│   │   ├── audio/                # Audio feedback files (punch/block sounds)
+│   │   ├── css/                  # Stylesheets for the web UI
+│   │   ├── images/               # Screenshots and UI assets
+│   │   ├── js/                   # Frontend JavaScript logic
+│   │   └── video/                # Demo GIFs and video samples
+│   │
+│   └── templates/                # HTML templates for the Flask UI
+│
+├── main/                         # Model training and dataset preparation
+│   ├── block_classifier.pth      # Trained block classifier (backup/reference)
+│   ├── punch_classifier.pth      # Trained punch classifier (backup/reference)
+│   ├── script.ipynb              # Jupyter notebook for data collection & training
+│   ├── yolo11m-pose.pt           # YOLOv11 model for training pipeline
+│   └── labels/                   # Stored labels for collected keypoints
+│
+├── gpu.py                        # CUDA access, check file
+│
+└── README.md                     # Project documentation 
 ```
 ## Features  
 
