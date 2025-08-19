@@ -258,12 +258,16 @@ The hybrid YOLO-LSTM framework achieved **exceptionally high accuracy** in both 
 The LSTM trained on defensive actions (**forearm block, high guard, parry, negative**) demonstrated near-perfect classification.  
 
 - **Confusion Matrix**:  
-  ![Block Confusion Matrix](app/static/images/block_con.png)  
+  <p align="center">
+    <img src="app/static/images/block_con.png" alt="Block Confusion Matrix" width="600"/>
+  </p>  
 
   The confusion matrix shows that each block class was classified with extremely high precision. Misclassifications are minimal, with almost all predictions aligning perfectly with ground-truth labels.  
 
 - **ROC Curve**:  
-  ![Block ROC Curve](app/static/images/block_roc.png)  
+  <p align="center">
+    <img src="app/static/images/block_roc.png" alt="Block ROC Curve" width="600"/>
+  </p>  
 
   The ROC curve for block classification shows **AUC = 1.0** across all classes, highlighting the model’s ability to separate defensive actions without overlap.  
 
@@ -271,19 +275,26 @@ The LSTM trained on defensive actions (**forearm block, high guard, parry, negat
 For offensive techniques (**jab, cross, hook, uppercut**), the LSTM model also achieved outstanding accuracy.  
 
 - **Confusion Matrix**:  
-  ![Punch Confusion Matrix](app/static/images/punch_con.png)  
+  <p align="center">
+    <img src="app/static/images/punch_con.png" alt="Punch Confusion Matrix" width="600"/>
+  </p>  
 
   The confusion matrix reveals that each punch class is recognized with near-perfect accuracy, with very few misclassifications (e.g., slight confusion between cross and hook).  
 
 - **ROC Curve**:  
-  ![Punch ROC Curve](app/static/images/punch_roc.png)  
+  <p align="center">
+    <img src="app/static/images/punch_roc.png" alt="Punch ROC Curve" width="600"/>
+  </p>  
 
   The ROC analysis further confirms strong performance, with **AUC = 1.0** for all punch types, meaning the classifier can reliably distinguish between offensive techniques.  
 
 ### 🔹 Performance Metrics Table  
 The table below summarizes the quantitative results across all action classes:  
 
-![Model Performance Table](app/static/images/table.png)  
+<p align="center">
+  <img src="app/static/images/table.png" alt="Model Performance Table" width="500"/>
+</p>  
+
 
 **Discussion**:  
 - **Cross** punches achieved **Precision = 1.0, Recall = 0.99**, with an F1-score of 1.0, showing almost perfect recognition.  
